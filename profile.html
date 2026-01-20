@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HimakarRaju | Developer Showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-200 font-[Inter]">
+
+  <section
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-black">
+    <div class="text-center max-w-4xl px-6">
+      <h1 class="text-5xl font-extrabold tracking-tight">HimakarRaju Gunda</h1>
+      <p class="mt-4 text-xl text-indigo-400">Project Engineer</p>
+      <p class="mt-6 text-slate-400">Building enterprise-grade AI, graph, and observability platforms with
+        production-level realism.</p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#profile" class="px-6 py-3 bg-indigo-600 rounded-xl hover:bg-indigo-500 transition">View Profile</a>
+        <a href="#projects"
+          class="px-6 py-3 border border-indigo-600 rounded-xl hover:bg-indigo-600/10 transition">Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" class="py-24 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8">Developer Profile</h2>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <p class="text-slate-400 leading-relaxed">Project engineer specializing in enterprise-grade data platforms,
+          knowledge graphs, AI-driven analytics, and simulation systems. Focused on realism, scalability, and
+          production-grade design.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-4 bg-slate-900 rounded-xl">Flask & REST APIs</div>
+        <div class="p-4 bg-slate-900 rounded-xl">Neo4j & Graph GDS</div>
+        <div class="p-4 bg-slate-900 rounded-xl">Observability Platforms</div>
+        <div class="p-4 bg-slate-900 rounded-xl">AI/ML Systems</div>
+        <div class="p-4 bg-slate-900 rounded-xl">Data Visualization</div>
+        <div class="p-4 bg-slate-900 rounded-xl">Real-Time Systems</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="py-24 bg-slate-900/40 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12">Resume Highlights</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-950 p-6 rounded-2xl shadow-xl">
+          <h3 class="font-semibold text-indigo-400">Backend & Systems</h3>
+          <ul class="mt-4 space-y-2 text-slate-400">
+            <li>Flask Modular Architecture</li>
+            <li>Neo4j 5.x</li>
+            <li>Knowledge Graphs</li>
+            <li>Real-time Data Pipelines</li>
+          </ul>
+          <!-- <div class="mt-4 text-sm text-slate-500"><b>Case Study:</b> Reduced root-cause identification time by designing a graph-driven RCA engine correlating metrics, logs, and traces across service dependencies.</div> -->
+        </div>
+        <div class="bg-slate-950 p-6 rounded-2xl shadow-xl">
+          <h3 class="font-semibold text-indigo-400">Visualization & UI</h3>
+          <ul class="mt-4 space-y-2 text-slate-400">
+            <li>D3.js, Cytoscape.js</li>
+            <li>Plotly Dashboards</li>
+            <li>Graph Exploration</li>
+            <li>Interactive Analytics</li>
+          </ul>
+        </div>
+        <div class="bg-slate-950 p-6 rounded-2xl shadow-xl">
+          <h3 class="font-semibold text-indigo-400">AI & Data</h3>
+          <ul class="mt-4 space-y-2 text-slate-400">
+            <li>Anomaly Detection</li>
+            <li>Recommendation Systems</li>
+            <li>Forecasting Models</li>
+            <li>Synthetic Data</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Flagship Projects</h2>
+    <div class="flex gap-3 mb-10 flex-wrap">
+      <button onclick="filterProjects('all')" class="tag">All</button>
+      <!-- <button onclick="filterProjects('ai')" class="tag">AI</button>-->
+      <button onclick="filterProjects('graph')" class="tag">Graph</button>
+      <button onclick="filterProjects('simulation')" class="tag">Simulation</button>
+      <button onclick="filterProjects('bfs')" class="tag">BFS</button>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10" id="projectGrid">
+
+      <div class="bg-slate-900 p-6 rounded-2xl project-card graph ai">
+        <h3 class="text-xl font-semibold text-indigo-400">Observability Platform</h3>
+        <div class="mt-2"><span class="tag">Flask</span><span class="tag">Neo4j</span><span
+            class="tag">D3.js</span><span class="tag">AIOps</span></div>
+        <p class="mt-3 text-slate-400">Enterprise observability system with graph-driven RCA.</p>
+        <p class="mt-3 text-slate-500">Architecture: Python + KG</p>
+        <pre class="mt-3 text-xs text-slate-500">[Metrics]→[KG]→[RCA]→[Dashboards]</pre>
+        <!-- <button onclick="openCase('obs')" class="mt-4 text-indigo-400">View Case Study</button> -->
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-2xl project-card graph bfs">
+        <h3 class="text-xl font-semibold text-indigo-400">BFS Graph Analytics</h3>
+        <div class="mt-2"><span class="tag">Neo4j</span><span class="tag">Fraud</span><span
+            class="tag">Recommender</span></div>
+        <p class="mt-3 text-slate-400">Graph-based banking intelligence platform.</p>
+        <p class="mt-3 text-slate-500">Architecture: Event-driven KG</p>
+        <pre class="mt-3 text-xs text-slate-500">[Txns]→[Fraud Rings]→[Risk/Reco]</pre>
+        <!-- <button onclick="openCase('bfs')" class="mt-4 text-indigo-400">View Case Study</button> -->
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-2xl project-card simulation ai">
+        <h3 class="text-xl font-semibold text-indigo-400">Factory Capacity Planner</h3>
+        <div class="mt-2"><span class="tag">Simulation</span><span class="tag">AI</span><span
+            class="tag">Forecasting</span></div>
+        <p class="mt-3 text-slate-400">Automotive production simulation and optimization.</p>
+        <p class="mt-3 text-slate-500">Architecture: AI + Simulation Engine</p>
+        <pre class="mt-3 text-xs text-slate-500">[Sensors]→[AI]→[Planner]→[KPIs]</pre>
+        <!-- <button onclick="openCase('factory')" class="mt-4 text-indigo-400">View Case Study</button> -->
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-2xl project-card graph">
+        <h3 class="text-xl font-semibold text-indigo-400">Workforce Knowledge Graph</h3>
+        <div class="mt-2"><span class="tag">KG</span><span class="tag">Skills</span><span class="tag">Analytics</span>
+        </div>
+        <p class="mt-3 text-slate-400">Workforce intelligence & team optimization.</p>
+        <p class="mt-3 text-slate-500">Architecture: HR Graph Platform</p>
+        <pre class="mt-3 text-xs text-slate-500">[People]→[Skills]→[Teams]</pre>
+        <!-- <button onclick="openCase('workforce')" class="mt-4 text-indigo-400">View Case Study</button> -->
+      </div>
+    </div>
+  </section>
+
+  <div id="caseModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center">
+    <div class="bg-slate-900 p-8 rounded-xl max-w-2xl">
+      <h3 id="caseTitle" class="text-xl font-bold text-indigo-400"></h3>
+      <p id="caseBody" class="mt-4 text-slate-400"></p>
+      <button onclick="closeCase()" class="mt-6 text-indigo-400">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const cases = {
+      obs: { title: 'Observability Platform', body: 'Designed a graph-driven observability system reducing RCA time by correlating metrics, logs, and traces across service dependencies.' },
+      bfs: { title: 'BFS Graph Analytics', body: 'Built a Neo4j-powered BFS platform enabling fraud ring detection and personalized financial recommendations.' },
+      factory: { title: 'Factory Planner', body: 'Created AI-driven capacity planning reducing bottlenecks and improving throughput via predictive simulations.' },
+      workforce: { title: 'Workforce KG', body: 'Delivered a skill-based knowledge graph enabling team optimization and succession planning.' }
+    };
+    function openCase(id) { document.getElementById('caseModal').classList.remove('hidden'); caseTitle.innerText = cases[id].title; caseBody.innerText = cases[id].body }
+    function closeCase() { document.getElementById('caseModal').classList.add('hidden') }
+    function filterProjects(cat) { document.querySelectorAll('.project-card').forEach(c => { c.style.display = (cat === 'all' || c.classList.contains(cat)) ? 'block' : 'none' }) }
+  </script>
+
+  <footer class="py-12 text-center text-slate-500 border-t border-slate-800">
+    <p> HimakarRaju Gunda · Developer Showcase</p>
+  </footer>
+
+</body>
+
+</html>
